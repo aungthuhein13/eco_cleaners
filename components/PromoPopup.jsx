@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 
+const MAPS_URL =
+  "https://www.google.com/maps/place/21612+Plano+Trabuco+Rd,+Trabuco+Canyon,+CA+92679/@33.6479431,-117.576734,19z/data=!3m1!4b1!4m6!3m5!1s0x80dceb1902ca3587:0xba9686ecc1ae1983!8m2!3d33.6479431!4d-117.5760903!16s%2Fg%2F11c3q3c5_j?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D";
+
 export default function PromoPopup() {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -21,11 +24,12 @@ export default function PromoPopup() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/55 px-5">
-      <div className="relative w-full max-w-md rounded-4xl bg-white px-7 py-9 text-center shadow-2xl md:px-10">
+      <div className="relative w-full max-w-md rounded-[2rem] bg-white px-7 py-9 text-center shadow-2xl md:px-10">
         <button
           onClick={closePopup}
-          className="absolute right-5 top-5 cursor-pointer text-3xl leading-none text-[#4B6359] hover:text-[#173B2F]"
+          className="absolute right-5 top-5 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-3xl leading-none text-[#4B6359] hover:bg-[#F8F7F2] hover:text-[#173B2F]"
           aria-label="Close popup"
+          type="button"
         >
           ×
         </button>
@@ -36,7 +40,7 @@ export default function PromoPopup() {
 
         <div className="mx-auto mt-5 h-px w-20 bg-[#C8A85A]" />
 
-        <h2 className="mt-6 text-7xl font-extrabold tracking-tight text-[#173B2F]">
+        <h2 className="mt-6 text-6xl font-extrabold tracking-tight text-[#173B2F] sm:text-7xl">
           30% OFF
         </h2>
 
@@ -53,11 +57,11 @@ export default function PromoPopup() {
             href="tel:9496284555"
             className="inline-block rounded-full bg-[#173B2F] px-7 py-4 text-base font-semibold text-white shadow-md hover:bg-[#245646]"
           >
-            Call Now
+            Call to Claim Offer
           </a>
 
           <a
-            href="https://www.google.com/maps/place/21612+Plano+Trabuco+Rd,+Trabuco+Canyon,+CA+92679/@33.6479431,-117.576734,19z/data=!3m1!4b1!4m6!3m5!1s0x80dceb1902ca3587:0xba9686ecc1ae1983!8m2!3d33.6479431!4d-117.5760903!16s%2Fg%2F11c3q3c5_j?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
+            href={MAPS_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-full border border-[#173B2F] bg-white px-7 py-4 text-base font-semibold text-[#173B2F] shadow-sm hover:bg-[#F8F7F2]"
