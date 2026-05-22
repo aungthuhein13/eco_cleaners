@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const MAPS_URL =
   "https://www.google.com/maps/place/21612+Plano+Trabuco+Rd,+Trabuco+Canyon,+CA+92679/@33.6479431,-117.576734,19z/data=!3m1!4b1!4m6!3m5!1s0x80dceb1902ca3587:0xba9686ecc1ae1983!8m2!3d33.6479431!4d-117.5760903!16s%2Fg%2F11c3q3c5_j?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D";
 
@@ -8,15 +10,15 @@ export default function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
         <div>
           <p className="mb-5 inline-block rounded-full border border-[#C8A85A] bg-white px-4 py-2 text-sm font-medium text-[#8B7A45]">
-            Now Open • Premium Care
+            Soft Opening • 30% off Dry Cleaning
           </p>
 
           <h2 className="max-w-xl text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
-            Fresh, polished, and ready to wear.
+            Now open in Trabuco Canyon
           </h2>
 
           <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
-            We offer premium garment care with eco-conscious practices and quick turnaround
+            We offer premium garment care with eco-friendly practices and quick turnaround
             options.
           </p>
 
@@ -46,34 +48,33 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="rounded-[2rem] border border-[#D7C9A3] bg-white p-8 shadow-lg">
-          <div className="rounded-[1.5rem] bg-[#F8F7F2] p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#8B7A45]">
-              Our Story
-            </p>
+        <div className="rounded-[2rem] border border-[#D7C9A3] bg-white p-3 shadow-lg">
+          <div className="relative h-[360px] overflow-hidden rounded-[1.5rem] md:h-[460px]">
+            <Image
+              src="/storefront.JPEG"
+              alt="Eco Cleaners storefront in Trabuco Canyon"
+              fill
+              priority
+              className="object-cover"
+            />
 
-            <h3 className="mt-5 text-3xl font-semibold">
-              We care for your clothes like they matter — because they do.
-            </h3>
+            <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-white/92 p-3 shadow-lg backdrop-blur sm:bottom-5 sm:left-5 sm:right-5 sm:rounded-2xl sm:p-5">
+              <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#8B7A45] sm:text-xs sm:tracking-[0.25em]">
+                Now Open
+              </p>
 
-            <p className="mt-4 leading-7 text-[#4B6359]">
-              With over 10 years of experience in the industry, 
-              we build dry cleaners on a simple belief: your clothes are part of your everyday life.
-              We focus on careful cleaning, proper handling, and friendly service 
-              so you can trust us with the pieces you wear most.
-            </p>
+              <h3 className="mt-1 text-lg font-semibold text-[#173B2F] sm:mt-2 sm:text-2xl">
+                Visit us in Trabuco Canyon.
+              </h3>
 
-            <div className="mt-8 space-y-3 text-sm">
-              <div className="rounded-2xl bg-white p-4 shadow-sm">
-                10+ years of experience
-              </div>
+              <p className="mt-1 text-[11px] leading-4 text-[#4B6359] sm:mt-2 sm:text-sm sm:leading-6">
+                Soft opening special: 30% off dry cleaning for 10 pieces or more.
+              </p>
+            </div>  
 
-              <div className="rounded-2xl bg-white p-4 shadow-sm">
-                Eco-Friendly
-              </div>
-            </div>
           </div>
         </div>
+
       </div>
     </section>
   );
