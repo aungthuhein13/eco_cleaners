@@ -4,7 +4,7 @@ const MAPS_URL =
 
 export default function Promo() {
   return (
-    <section id="special" className="px-6 py-10">
+    <section id="special" className="px-6 py-8">
       <div className="mx-auto max-w-7xl rounded-[2rem] bg-[#173B2F] p-8 text-white shadow-xl md:p-12">
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D7C9A3]">
           Soft Opening Special

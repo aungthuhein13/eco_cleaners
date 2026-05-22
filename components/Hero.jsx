@@ -6,7 +6,7 @@ const MAPS_URL =
 
 export default function Hero() {
   return (
-    <section className="px-6 py-20">
+    <section className="px-6 pt-14 pb-10">
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
         <div>
           <p className="mb-5 inline-block rounded-full border border-[#C8A85A] bg-white px-4 py-2 text-sm font-medium text-[#8B7A45]">
