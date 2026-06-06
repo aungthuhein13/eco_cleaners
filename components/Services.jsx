@@ -3,41 +3,49 @@ const services = [
     title: "Dry Cleaning",
     description:
       "Premium cleaning for suits, dresses, coats, delicate garments, and everyday wear.",
+      href: "/dry-cleaning",
   },
   {
-    title: "Laundry Service",
+    title: "Shirt Laundry",
     description:
-      "Fresh and neatly finished laundry service for busy local customers.",
+      "Fresh and neatly finished laundry shirts service for busy local customers.",
+      href: "/shirt-laundry",
   },
   {
     title: "Alterations",
     description:
       "Hemming, simple repairs, adjustments, and tailoring support for a better fit.",
+      href: "/alteration",
   },
   {
-    title: "Leather Care",
+    title: "Leather Cleaning",
     description:
       "Careful handling for leather and specialty items. Availability may vary by item.",
+      href: "/leather-cleaning",
   },
   {
     title: "Wash & Fold",
     description:
       "Convenient wash and fold service for everyday laundry, neatly cleaned and folded.",
+      href: "/wash-and-fold",
   },
   {
     title: "Household Items",
     description:
       "Cleaning care for household items such as blankets, linens, tablecloths, and more.",
+      href: "/household-items",
   },
   {
     title: "Drapery Cleaning",
     description:
       "Careful cleaning for drapes and curtains to help refresh your home or business.",
+      href: "/drapery-cleaning",
   },
   {
     title: "Wedding Gown Cleaning",
     description:
       "Special care for wedding gowns and formal garments. Ask us about availability.",
+      href: "/wedding-gown-cleaning",
   },
 ];
 
@@ -56,18 +64,40 @@ export default function Services() {
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-[1.5rem] border border-[#D7C9A3] bg-white p-6 shadow-sm hover:shadow-md"
-            >
-              <h3 className="text-xl font-semibold">{service.title}</h3>
+      {services.map((service) => {
+        const CardContent = (
+          <>
+            <h3 className="text-xl font-semibold">{service.title}</h3>
 
-              <p className="mt-3 leading-7 text-[#4B6359]">
-                {service.description}
+            <p className="mt-3 leading-7 text-[#4B6359]">
+              {service.description}
+            </p>
+
+            {service.href && (
+              <p className="mt-5 text-sm font-semibold text-[#8B7A45]">
+                Learn More →
               </p>
-            </div>
-          ))}
+            )}
+          </>
+        );
+
+        return service.href ? (
+          <a
+            key={service.title}
+            href={service.href}
+            className="rounded-[1.5rem] border border-[#D7C9A3] bg-white p-6 shadow-sm hover:-translate-y-1 hover:shadow-md"
+          >
+            {CardContent}
+          </a>
+        ) : (
+          <div
+            key={service.title}
+            className="rounded-[1.5rem] border border-[#D7C9A3] bg-white p-6 shadow-sm hover:shadow-md"
+          >
+            {CardContent}
+          </div>
+        );
+      })}
         </div>
       </div>
     </section>

@@ -22,9 +22,15 @@ export default function Header() {
           <a href="#services" className="hover:text-[#8B7A45]">
             Services
           </a>
+
+          <a href="/alteration" className="hover:text-[#8B7A45]">
+            Alteration
+          </a>
+
           <a href="#special" className="hover:text-[#8B7A45]">
             Special
           </a>
+
           <a href="#contact" className="hover:text-[#8B7A45]">
             Contact
           </a>
