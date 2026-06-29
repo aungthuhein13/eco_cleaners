@@ -1,6 +1,5 @@
 const MAPS_URL =
-  "https://www.google.com/maps/place/21612+Plano+Trabuco+Rd+e,+Trabuco+Canyon,+CA+92679/@33.6479431,-117.5786652,17z/data=!3m1!4b1!4m5!3m4!1s0x80dceb1902ca3587:0x161b8bac276f0689!8m2!3d33.6479431!4d-117.5760903?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D";
-
+  "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7"
 export default function Contact() {
   return (
     <section id="contact" className="px-6 py-12">

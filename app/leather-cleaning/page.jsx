@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Eco+Cleaners+YOUR+FULL+ADDRESS+CA";
+"https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7"
 
 const leatherServices = [
   "Leather Jackets",

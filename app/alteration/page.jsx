@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const MAPS_URL =
-  "https://www.google.com/maps/place/21612+Plano+Trabuco+Rd,+Trabuco+Canyon,+CA+92679/@33.6479431,-117.576734,19z/data=!3m1!4b1!4m6!3m5!1s0x80dceb1902ca3587:0xba9686ecc1ae1983!8m2!3d33.6479431!4d-117.5760903!16s%2Fg%2F11c3q3c5_j?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D";
+"https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7"
 
 const alterationServices = [
   "Waist Adjustments",
@@ -74,7 +74,7 @@ export default function AlterationsPage() {
             <div className="rounded-[2rem] border border-[#D7C9A3] bg-white p-3 shadow-lg">
                 <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
                     <Image
-                    src="/alteration.png"
+                    src="/alteration.JPEG"
                     alt="Eco Cleaners alteration service"
                     fill
                     priority

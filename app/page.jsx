@@ -5,6 +5,7 @@ import Promo from "../components/Promo";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import PromoPopup from "../components/PromoPopup";
+import Reviews from "@/components/Reviews";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Header />
       <Hero />
       <Services />
+      <Reviews />
       <Promo />
       <Contact />
       <Footer />
