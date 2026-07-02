@@ -19,7 +19,7 @@ export default function Header() {
         </a>
 
         <div className="hidden gap-8 text-sm font-medium md:flex">
-          <a href="#services" className="hover:text-[#8B7A45]">
+          <a href="/services" className="hover:text-[#8B7A45]">
             Services
           </a>
 
@@ -27,11 +27,11 @@ export default function Header() {
             Alteration
           </a>
 
-          <a href="#special" className="hover:text-[#8B7A45]">
-            Special
+          <a href="/offers" className="hover:text-[#8B7A45]">
+            Offers
           </a>
 
-          <a href="#contact" className="hover:text-[#8B7A45]">
+          <a href="/contact" className="hover:text-[#8B7A45]">
             Contact
           </a>
         </div>

@@ -39,7 +39,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="#services"
+              href="/services"
               className="rounded-full border border-[#C8A85A] bg-white px-7 py-4 text-center font-semibold text-[#173B2F] hover:bg-[#FFF9E8]"
             >
               View Services
@@ -56,24 +56,8 @@ export default function Hero() {
               priority
               className="object-cover"
             />
-
-            <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-white/92 p-3 shadow-lg backdrop-blur sm:bottom-5 sm:left-5 sm:right-5 sm:rounded-2xl sm:p-5">
-              <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#8B7A45] sm:text-xs sm:tracking-[0.25em]">
-                Now Open
-              </p>
-
-              <h3 className="mt-1 text-lg font-semibold text-[#173B2F] sm:mt-2 sm:text-2xl">
-                Visit us in Trabuco Canyon.
-              </h3>
-
-              <p className="mt-1 text-[11px] leading-4 text-[#4B6359] sm:mt-2 sm:text-sm sm:leading-6">
-                Soft opening special: 30% off dry cleaning for 10 pieces or more.
-              </p>
-            </div>  
-
           </div>
         </div>
-
       </div>
     </section>
   );
