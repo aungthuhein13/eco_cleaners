@@ -14,7 +14,7 @@ export default function Promo() {
         </h2>
 
         <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80">
-          Available for orders of 10 pieces or more. Dry cleaning only. Ask
+          First Time Only. Dry cleaning only. Ask
           in-store for details.
         </p>
 

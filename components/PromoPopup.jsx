@@ -2,34 +2,34 @@
 
 import { useEffect, useState } from "react";
 
-const MAPS_URL =
-"https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7"
+const MAPS_URL = "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7";
 
 export default function PromoPopup() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 700);
+    const hasSeenPopup = sessionStorage.getItem("ecoPromoPopupSeen");
 
-    return () => clearTimeout(timer);
+    if (!hasSeenPopup) {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+        sessionStorage.setItem("ecoPromoPopupSeen", "true");
+      }, 700);
+
+      return () => clearTimeout(timer);
+    }
   }, []);
-
-  function closePopup() {
-    setShowPopup(false);
-  }
 
   if (!showPopup) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/55 px-5">
+    <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/55 px-5">
       <div className="relative w-full max-w-md rounded-[2rem] bg-white px-7 py-9 text-center shadow-2xl md:px-10">
         <button
-          onClick={closePopup}
+          type="button"
+          onClick={() => setShowPopup(false)}
           className="absolute right-5 top-5 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-3xl leading-none text-[#4B6359] hover:bg-[#F8F7F2] hover:text-[#173B2F]"
           aria-label="Close popup"
-          type="button"
         >
           ×
         </button>
