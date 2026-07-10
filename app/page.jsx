@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Promo from "../components/Promo";
@@ -14,7 +13,6 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#F8F7F2] text-[#173B2F]">
       <PromoPopup />
-      <Header />
       <Hero />
       <Services />
       <HowItWorks />
@@ -23,7 +21,6 @@ export default function HomePage() {
       <Promo />
       <Contact />
       <Footer />
-      <MobileBottomBar />
     </main>
   );
 }

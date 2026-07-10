@@ -23,17 +23,10 @@ export const metadata = {
 
 export default function HouseholdItemsPage() {
   return (
-    <main className="min-h-screen bg-[#F8F7F2] text-[#173B2F]">
+    <main className="min-h-screen bg-[#F8F7F2] pb-24 text-[#173B2F] md:pb-0">
       <section className="px-6 pt-14 pb-10">
         <div className="mx-auto max-w-7xl">
-          <a
-            href="/"
-            className="text-sm font-semibold text-[#8B7A45] hover:text-[#173B2F]"
-          >
-            ← Back to Home
-          </a>
-
-          <div className="mt-10 grid items-center gap-12 md:grid-cols-2">
+          <div className="mt-3 grid items-center gap-12 md:grid-cols-2">
             <div>
               <p className="mb-5 inline-block rounded-full border border-[#C8A85A] bg-white px-4 py-2 text-sm font-medium text-[#8B7A45]">
                 Household Item Cleaning
