@@ -4,21 +4,29 @@ import { useEffect, useState } from "react";
 
 const MAPS_URL = "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7";
 
-export default function PromoPopup() {
+export default function PagePromoPopup({
+  storageKey,
+  label,
+  title,
+  subtitle,
+  details,
+  primaryButton = "Call Now",
+  secondaryButton = "Get Directions",
+}) {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const hasSeenPopup = sessionStorage.getItem("ecoPromoPopupSeen");
+    const hasSeenPopup = sessionStorage.getItem(storageKey);
 
     if (!hasSeenPopup) {
       const timer = setTimeout(() => {
         setShowPopup(true);
-        sessionStorage.setItem("ecoPromoPopupSeen", "true");
+        sessionStorage.setItem(storageKey, "true");
       }, 700);
 
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [storageKey]);
 
   if (!showPopup) return null;
 
@@ -35,21 +43,21 @@ export default function PromoPopup() {
         </button>
 
         <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8B7A45]">
-          Soft Opening Special
+          {label}
         </p>
 
         <div className="mx-auto mt-5 h-px w-20 bg-[#C8A85A]" />
 
-        <h2 className="mt-6 text-6xl font-extrabold tracking-tight text-[#173B2F] sm:text-7xl">
-          30% OFF
+        <h2 className="mt-6 text-5xl font-extrabold tracking-tight text-[#173B2F] sm:text-6xl">
+          {title}
         </h2>
 
-        <p className="mt-2 text-2xl font-semibold text-[#173B2F]">
-          Dry Cleaning
+        <p className="mt-3 text-2xl font-semibold text-[#173B2F]">
+          {subtitle}
         </p>
 
-        <div className="mx-auto mt-6 rounded-2xl bg-[#F8F7F2] px-4 py-3 text-sm font-medium text-[#173B2F]">
-          Your First Order • Dry cleaning only • Limited time
+        <div className="mx-auto mt-6 rounded-2xl bg-[#F8F7F2] px-4 py-3 text-sm font-medium leading-6 text-[#173B2F]">
+          {details}
         </div>
 
         <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center">
@@ -57,7 +65,7 @@ export default function PromoPopup() {
             href="tel:9496284555"
             className="inline-block rounded-full bg-[#173B2F] px-7 py-4 text-base font-semibold text-white shadow-md hover:bg-[#245646]"
           >
-            Call to Claim Offer
+            {primaryButton}
           </a>
 
           <a
@@ -66,7 +74,7 @@ export default function PromoPopup() {
             rel="noopener noreferrer"
             className="inline-block rounded-full border border-[#173B2F] bg-white px-7 py-4 text-base font-semibold text-[#173B2F] shadow-sm hover:bg-[#F8F7F2]"
           >
-            Get Directions
+            {secondaryButton}
           </a>
         </div>
       </div>

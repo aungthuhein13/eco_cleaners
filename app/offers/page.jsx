@@ -6,8 +6,21 @@ const offers = [
     label: "Soft Opening Special",
     title: "30% OFF Dry Cleaning",
     description:
-      "Enjoy 30% off dry cleaning when you bring in 10 pieces or more.",
-    details: ["10 pieces or more", "Dry cleaning only", "Limited time offer"],
+      "Enjoy 30% off your first dry cleaning order.",
+    details: ["First time only", "Dry cleaning only", "Limited time offer"],
+    primaryButton: "Call to Ask",
+    secondaryButton: "Get Directions",
+  },
+  {
+    label: "Alteration Offer",
+    title: "$5 OFF Alterations",
+    description:
+      "Get $5 off alteration orders of $50 or more.",
+    details: [
+      "$50 minimum alteration order",
+      "Alterations only",
+      "In-person quote recommended",
+    ],
     primaryButton: "Call to Ask",
     secondaryButton: "Get Directions",
   },
@@ -28,6 +41,7 @@ const offers = [
 
 const finePrint = [
   "Offers cannot be combined with other discounts.",
+  "$5 off alteration orders of $50 or more.",
   "Specialty items may not qualify for all promotions.",
   "Alterations, leather, wedding gowns, drapery, and household items may require in-person review.",
   "Offers may change or end at any time.",
@@ -88,7 +102,7 @@ export default function OffersPage() {
       </section>
 
             <section className="px-6 py-12">
-        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 lg:grid-cols-3">
           {offers.map((offer) => (
             <div
               key={offer.title}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PagePromoPopup from "@/components/PagePromoPopup";
 
 const MAPS_URL =
 "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7"
@@ -27,6 +28,15 @@ export const metadata = {
 export default function AlterationsPage() {
   return (
     <main className="min-h-screen bg-[#F8F7F2] text-[#173B2F]">
+      <PagePromoPopup
+        storageKey="ecoAlterationPopupSeen"
+        label="Alteration Offer"
+        title="$5 OFF"
+        subtitle="Alterations $50+"
+        details="Get $5 off alteration orders of $50 or more. Hemming, repairs, waist adjustments, tapering, zipper replacement, and more. In-person quote recommended."
+        primaryButton="Call to Ask"
+        secondaryButton="Get Directions"
+      />
       <section className="px-6 py-16">
         <div className="mx-auto max-w-7xl">
           <a

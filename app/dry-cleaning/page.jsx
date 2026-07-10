@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PagePromoPopup from "@/components/PagePromoPopup";
 
 const MAPS_URL =
 "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7"
@@ -27,6 +28,15 @@ export const metadata = {
 export default function DryCleaningPage() {
   return (
     <main className="min-h-screen bg-[#F8F7F2] text-[#173B2F]">
+      <PagePromoPopup
+        storageKey="ecoDryCleaningPopupSeen"
+        label="Soft Opening Special"
+        title="30% OFF"
+        subtitle="Dry Cleaning"
+        details="Your First Order • Dry cleaning only • Limited time"
+        primaryButton="Call to Claim Offer"
+        secondaryButton="Get Directions"
+      />
       <section className="px-6 pt-14 pb-10">
         <div className="mx-auto max-w-7xl">
           <a
