@@ -55,7 +55,7 @@ export default function Header() {
           </a>
 
           <a
-            href="/alterations"
+            href="/alteration"
             className="rounded-md px-3 py-2 text-sm font-medium text-[#173B2F] transition-colors hover:text-[#8B7A45]"
           >
             Alterations
