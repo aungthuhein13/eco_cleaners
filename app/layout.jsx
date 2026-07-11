@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import MobileBottomBar from "@/components/MobileBottomBar";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Eco Cleaners | Premium Dry Cleaning",
@@ -11,6 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-W4948XG9" />
+
       <body>
         <Header />
 
