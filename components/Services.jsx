@@ -1,5 +1,11 @@
 const services = [
   {
+  title: "Pickup & Delivery",
+  description:
+    "Convenient local pickup and delivery for dry cleaning, laundry, and eligible household items.",
+  href: "/pickup-delivery",
+  },
+  {
     title: "Dry Cleaning",
     description:
       "Premium cleaning for suits, dresses, coats, delicate garments, and everyday wear.",
@@ -63,7 +69,7 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {services.map((service) => {
         const CardContent = (
           <>

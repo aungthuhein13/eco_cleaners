@@ -8,6 +8,7 @@ const MAPS_URL = "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "Pickup & Delivery", href: "/pickup-delivery" },
   { label: "Alterations", href: "/alteration" },
   { label: "Offers", href: "/offers" },
   { label: "Contact", href: "/contact" },

@@ -5,6 +5,12 @@ const MAPS_URL =
 
 const services = [
   {
+  title: "Pickup & Delivery",
+  description:
+    "Convenient local pickup and delivery for dry cleaning, laundry, and eligible household items.",
+  href: "/pickup-delivery",
+  },
+  {
     title: "Dry Cleaning",
     description:
       "Professional cleaning for suits, dresses, coats, formalwear, delicate garments, and everyday clothing.",
@@ -170,10 +176,10 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <a
-                key={service.title}
+                key ={service.title}
                 href={service.href}
                 className="group rounded-[1.5rem] border border-[#D7C9A3] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >

@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-const MAPS_URL = "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7";
+const DEFAULT_MAPS_URL =
+  "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7";
 
 export default function PagePromoPopup({
   storageKey,
@@ -11,24 +12,28 @@ export default function PagePromoPopup({
   subtitle,
   details,
   primaryButton = "Call Now",
+  primaryHref = "tel:9496284555",
   secondaryButton = "Get Directions",
+  secondaryHref = DEFAULT_MAPS_URL,
 }) {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const hasSeenPopup = sessionStorage.getItem(storageKey);
 
-    if (!hasSeenPopup) {
-      const timer = setTimeout(() => {
-        setShowPopup(true);
-        sessionStorage.setItem(storageKey, "true");
-      }, 700);
+    if (hasSeenPopup) return;
 
-      return () => clearTimeout(timer);
-    }
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+      sessionStorage.setItem(storageKey, "true");
+    }, 700);
+
+    return () => clearTimeout(timer);
   }, [storageKey]);
 
   if (!showPopup) return null;
+
+  const secondaryIsExternal = secondaryHref.startsWith("http");
 
   return (
     <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/55 px-5">
@@ -62,16 +67,16 @@ export default function PagePromoPopup({
 
         <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center">
           <a
-            href="tel:9496284555"
+            href={primaryHref}
             className="inline-block rounded-full bg-[#173B2F] px-7 py-4 text-base font-semibold text-white shadow-md hover:bg-[#245646]"
           >
             {primaryButton}
           </a>
 
           <a
-            href={MAPS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={secondaryHref}
+            target={secondaryIsExternal ? "_blank" : undefined}
+            rel={secondaryIsExternal ? "noopener noreferrer" : undefined}
             className="inline-block rounded-full border border-[#173B2F] bg-white px-7 py-4 text-base font-semibold text-[#173B2F] shadow-sm hover:bg-[#F8F7F2]"
           >
             {secondaryButton}
