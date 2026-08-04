@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PagePromoPopup from "@/components/PagePromoPopup";
 
 const MAPS_URL =
 "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7"
@@ -24,6 +25,17 @@ export const metadata = {
 export default function HouseholdItemsPage() {
   return (
     <main className="min-h-screen bg-[#F8F7F2] pb-24 text-[#173B2F] md:pb-0">
+      <PagePromoPopup
+        storageKey="ecoHouseholdItemsPopupSeen"
+        label="Household Item Special"
+        title="20% OFF"
+        subtitle="Household Item Cleaning"
+        details="Save 20% on eligible household items, including comforters, blankets, bedspreads, linens, and tablecloths. Limited time offer."
+        primaryButton="Call to Ask"
+        primaryHref="tel:9496284555"
+        secondaryButton="Get Directions"
+        secondaryHref="https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7"
+      />
       <section className="px-6 pt-14 pb-10">
         <div className="mx-auto max-w-7xl">
           <div className="mt-3 grid items-center gap-12 md:grid-cols-2">

@@ -12,6 +12,19 @@ const offers = [
     secondaryButton: "Get Directions",
   },
   {
+  label: "Household Item Special",
+  title: "20% OFF Household Items",
+  description:
+    "Save 20% on eligible household item cleaning for a limited time.",
+  details: [
+    "Eligible household items only",
+    "Comforters, blankets, linens, and more",
+    "Limited time offer",
+  ],
+  primaryButton: "Call to Ask",
+  secondaryButton: "Get Directions",
+  },
+  {
     label: "Alteration Offer",
     title: "$5 OFF Alterations",
     description:
@@ -42,6 +55,7 @@ const offers = [
 const finePrint = [
   "Offers cannot be combined with other discounts.",
   "$5 off alteration orders of $50 or more.",
+  "Household item discount applies only to eligible items.",
   "Specialty items may not qualify for all promotions.",
   "Alterations, leather, wedding gowns, drapery, and household items may require in-person review.",
   "Offers may change or end at any time.",
@@ -95,7 +109,7 @@ export default function OffersPage() {
       </section>
 
             <section className="px-6 py-12">
-        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 lg:grid-cols-2">
           {offers.map((offer) => (
             <div
               key={offer.title}
