@@ -13,7 +13,7 @@ const shirtServices = [
 ];
 
 export const metadata = {
-  title: "Shirt Laundry in Trabuco Canyon | Eco Cleaners",
+  title: "Shirt Laundry in Trabuco Canyon | Echo Cleaners",
   description:
     "Professional shirt laundry in Trabuco Canyon. Dress shirts, button-down shirts, laundering, pressing, collar and cuff care, and hanger or folded finish.",
 };
@@ -34,7 +34,7 @@ export default function ShirtLaundryPage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
-                Eco Cleaners provides professional shirt laundry for dress
+                Echo Cleaners provides professional shirt laundry for dress
                 shirts, button-downs, and everyday business shirts. We focus on
                 clean finishing, collar and cuff care, and a polished look that
                 is ready to wear.
@@ -63,7 +63,7 @@ export default function ShirtLaundryPage() {
               <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
                 <Image
                   src="/shirt_pressed.png"
-                  alt="Professional shirt laundry and pressing at Eco Cleaners"
+                  alt="Professional shirt laundry and pressing at Echo Cleaners"
                   fill
                   priority
                   className="object-cover object-center"
@@ -172,7 +172,7 @@ export default function ShirtLaundryPage() {
           <div className="grid items-center gap-8 md:grid-cols-[1.3fr_0.7fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D7C9A3]">
-                Visit Eco Cleaners
+                Visit Echo Cleaners
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold md:text-5xl">
@@ -180,7 +180,7 @@ export default function ShirtLaundryPage() {
               </h2>
 
               <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80">
-                Stop by Eco Cleaners for professional shirt laundry and garment
+                Stop by Echo Cleaners for professional shirt laundry and garment
                 care in Trabuco Canyon.
               </p>
             </div>
@@ -207,7 +207,7 @@ export default function ShirtLaundryPage() {
       </section>
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

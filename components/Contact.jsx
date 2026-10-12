@@ -10,7 +10,7 @@ export default function Contact() {
           </p>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-            Stop by Eco Cleaners today.
+            Stop by Echo Cleaners today.
           </h2>
         </div>
 

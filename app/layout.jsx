@@ -4,9 +4,9 @@ import MobileBottomBar from "@/components/MobileBottomBar";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata = {
-  title: "Eco Cleaners | Premium Dry Cleaning",
+  title: "Echo Cleaners | Premium Dry Cleaning",
   description:
-    "Eco Cleaners offers dry cleaning, laundry, alterations, leather care, household items, wedding gowns, and drapery cleaning in Trabuco Canyon.",
+    "Echo Cleaners offers dry cleaning, laundry, alterations, leather care, household items, wedding gowns, and drapery cleaning in Trabuco Canyon.",
 };
 
 export default function RootLayout({ children }) {

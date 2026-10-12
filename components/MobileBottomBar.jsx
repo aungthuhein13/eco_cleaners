@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 const MAPS_URL = "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7";
 
 const PICKUP_TEXT_URL =
-  "sms:9496284555?body=Hi%20Eco%20Cleaners%2C%20I%20would%20like%20to%20schedule%20a%20pickup.%20My%20ZIP%20code%20is%20";
+  "sms:9496284555?body=Hi%20Echo%20Cleaners%2C%20I%20would%20like%20to%20schedule%20a%20pickup.%20My%20ZIP%20code%20is%20";
 
 export default function MobileBottomBar() {
   const pathname = usePathname();

@@ -38,9 +38,9 @@ const serviceAreas = [
 ];
 
 export const metadata = {
-  title: "Contact Eco Cleaners | Trabuco Canyon Dry Cleaner",
+  title: "Contact Echo Cleaners | Trabuco Canyon Dry Cleaner",
   description:
-    "Contact Eco Cleaners in Trabuco Canyon for dry cleaning, laundry, alterations, and specialty garment care.",
+    "Contact Echo Cleaners in Trabuco Canyon for dry cleaning, laundry, alterations, and specialty garment care.",
 };
 
 export default function ContactPage() {
@@ -55,7 +55,7 @@ export default function ContactPage() {
               </p>
 
               <h1 className="max-w-xl text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
-                Visit Eco Cleaners in Trabuco Canyon.
+                Visit Echo Cleaners in Trabuco Canyon.
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
@@ -85,8 +85,8 @@ export default function ContactPage() {
             <div className="rounded-[2rem] border border-[#D7C9A3] bg-white p-3 shadow-lg">
               <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
                 <Image
-                  src="/front.JPEG"
-                  alt="Eco Cleaners storefront in Trabuco Canyon"
+                  src="/new_store_front.JPEG"
+                  alt="Echo Cleaners storefront in Trabuco Canyon"
                   fill
                   priority
                   className="object-cover object-center"
@@ -175,7 +175,7 @@ export default function ContactPage() {
             </h2>
 
             <p className="mt-4 max-w-xl text-lg leading-8 text-white/80">
-            Eco Cleaners is located in Trabuco Marketplace near CVS Pharmacy and
+            Echo Cleaners is located in Trabuco Marketplace near CVS Pharmacy and
             serves customers throughout the surrounding area.
             </p>
 
@@ -203,8 +203,8 @@ export default function ContactPage() {
       <div className="overflow-hidden rounded-[1.5rem] border border-white/20 bg-white/10 p-3">
         <div className="overflow-hidden rounded-[1.2rem] bg-white">
           <iframe
-            title="Eco Cleaners location map"
-            src="https://www.google.com/maps?q=Eco%20Cleaners%2021612%20Plano%20Trabuco%20Rd%20Suite%20E%20Trabuco%20Canyon%20CA%2092679&output=embed"
+            title="Echo Cleaners location map"
+            src="https://www.google.com/maps?q=Echo%20Cleaners%2021612%20Plano%20Trabuco%20Rd%20Suite%20E%20Trabuco%20Canyon%20CA%2092679&output=embed"
             className="h-[360px] w-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -212,7 +212,7 @@ export default function ContactPage() {
         </div>
 
         <div className="mt-4 rounded-2xl bg-white/10 p-5">
-          <h3 className="text-xl font-semibold">Eco Cleaners</h3>
+          <h3 className="text-xl font-semibold">Echo Cleaners</h3>
 
           <p className="mt-2 leading-7 text-white/80">
             21612 Plano Trabuco Rd Suite E
@@ -231,7 +231,7 @@ export default function ContactPage() {
                   
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

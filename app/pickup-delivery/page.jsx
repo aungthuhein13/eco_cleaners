@@ -3,9 +3,9 @@ import PagePromoPopup from "@/components/PagePromoPopup";
 
 const MAPS_URL = "https://maps.app.goo.gl/E1kD2reUfzDkSQ9g7";
 const PICKUP_TEXT_URL =
-  "sms:9496284555?body=Hi%20Eco%20Cleaners%2C%20I%20would%20like%20to%20schedule%20a%20pickup.%20My%20ZIP%20code%20is%20";
+  "sms:9496284555?body=Hi%20Echo%20Cleaners%2C%20I%20would%20like%20to%20schedule%20a%20pickup.%20My%20ZIP%20code%20is%20";
 const TEXT_URL =
-  "sms:9496284555?body=Hi%20Eco%20Cleaners%2C%20I%20would%20like%20to%20schedule%20a%20pickup.%20My%20ZIP%20code%20is%20";
+  "sms:9496284555?body=Hi%20Echo%20Cleaners%2C%20I%20would%20like%20to%20schedule%20a%20pickup.%20My%20ZIP%20code%20is%20";
 
 const steps = [
   {
@@ -81,9 +81,9 @@ const faqs = [
 ];
 
 export const metadata = {
-  title: "Pickup & Delivery | Eco Cleaners",
+  title: "Pickup & Delivery | Echo Cleaners",
   description:
-    "Schedule dry cleaning and laundry pickup and delivery with Eco Cleaners in Trabuco Canyon and nearby communities.",
+    "Schedule dry cleaning and laundry pickup and delivery with Echo Cleaners in Trabuco Canyon and nearby communities.",
 };
 
 export default function PickupDeliveryPage() {
@@ -113,7 +113,7 @@ export default function PickupDeliveryPage() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
-              Schedule convenient pickup and delivery from Eco Cleaners. We
+              Schedule convenient pickup and delivery from Echo Cleaners. We
               collect your items, care for them professionally, and return them
               ready to wear.
             </p>
@@ -153,8 +153,8 @@ export default function PickupDeliveryPage() {
           <div className="rounded-[2rem] border border-[#D7C9A3] bg-white p-3 shadow-lg">
             <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[540px]">
               <Image
-                src="/pickup&delivery.png"
-                alt="Eco Cleaners pickup and delivery van in a residential neighborhood"
+                src="/new_echo_pickup_truck.png"
+                alt="Echo Cleaners pickup and delivery van in a residential neighborhood"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -369,7 +369,7 @@ export default function PickupDeliveryPage() {
           </p>
 
           <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-semibold md:text-5xl">
-            Schedule your first Eco Cleaners pickup.
+            Schedule your first Echo Cleaners pickup.
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/80">
@@ -396,7 +396,7 @@ export default function PickupDeliveryPage() {
       </section>
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

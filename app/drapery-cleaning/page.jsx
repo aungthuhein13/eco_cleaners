@@ -13,9 +13,9 @@ const draperyItems = [
 ];
 
 export const metadata = {
-  title: "Drapery & Curtain Cleaning in Trabuco Canyon | Eco Cleaners",
+  title: "Drapery & Curtain Cleaning in Trabuco Canyon | Echo Cleaners",
   description:
-    "Drapery and curtain cleaning in Trabuco Canyon. Bring drapes, curtains, sheers, and fabric window treatments to Eco Cleaners for review.",
+    "Drapery and curtain cleaning in Trabuco Canyon. Bring drapes, curtains, sheers, and fabric window treatments to Echo Cleaners for review.",
 };
 
 export default function DraperyCleaningPage() {
@@ -34,7 +34,7 @@ export default function DraperyCleaningPage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
-                Eco Cleaners helps with drapes, curtains, sheers, and fabric
+                Echo Cleaners helps with drapes, curtains, sheers, and fabric
                 window treatments. Because drapery varies by fabric, lining,
                 size, and condition, we recommend bringing items in for review.
               </p>
@@ -62,7 +62,7 @@ export default function DraperyCleaningPage() {
               <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
                 <Image
                   src="/drapery-care.png"
-                  alt="Drapery and curtain cleaning at Eco Cleaners"
+                  alt="Drapery and curtain cleaning at Echo Cleaners"
                   fill
                   priority
                   className="object-cover object-center"
@@ -170,7 +170,7 @@ export default function DraperyCleaningPage() {
           <div className="grid items-center gap-8 md:grid-cols-[1.3fr_0.7fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D7C9A3]">
-                Visit Eco Cleaners
+                Visit Echo Cleaners
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold md:text-5xl">
@@ -206,7 +206,7 @@ export default function DraperyCleaningPage() {
 
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

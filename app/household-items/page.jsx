@@ -17,9 +17,9 @@ const householdItems = [
 ];
 
 export const metadata = {
-  title: "Household Item Cleaning in Trabuco Canyon | Eco Cleaners",
+  title: "Household Item Cleaning in Trabuco Canyon | Echo Cleaners",
   description:
-    "Household item cleaning in Trabuco Canyon. Comforters, blankets, bedspreads, linens, tablecloths, and more at Eco Cleaners.",
+    "Household item cleaning in Trabuco Canyon. Comforters, blankets, bedspreads, linens, tablecloths, and more at Echo Cleaners.",
 };
 
 export default function HouseholdItemsPage() {
@@ -49,7 +49,7 @@ export default function HouseholdItemsPage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
-                Eco Cleaners helps clean household items such as comforters,
+                Echo Cleaners helps clean household items such as comforters,
                 blankets, bedspreads, tablecloths, linens, and more. Bring your
                 items in and we’ll review the best cleaning option.
               </p>
@@ -77,7 +77,7 @@ export default function HouseholdItemsPage() {
               <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
                 <Image
                   src="/comforter.png"
-                  alt="Household item cleaning at Eco Cleaners"
+                  alt="Household item cleaning at Echo Cleaners"
                   fill
                   priority
                   className="object-cover object-center"
@@ -185,7 +185,7 @@ export default function HouseholdItemsPage() {
           <div className="grid items-center gap-8 md:grid-cols-[1.3fr_0.7fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D7C9A3]">
-                Visit Eco Cleaners
+                Visit Echo Cleaners
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold md:text-5xl">
@@ -221,7 +221,7 @@ export default function HouseholdItemsPage() {
       </section>
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

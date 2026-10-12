@@ -9,7 +9,7 @@ const reviews = [
     name: "Seokha Kang",
     source: "Yelp",
     rating: "★★★★★",
-    text: "I got my pants alternation from Eco Cleaners yesterday. It was done quickly and nicely. Love the place!",
+    text: "I got my pants alternation from Echo Cleaners yesterday. It was done quickly and nicely. Love the place!",
   },
   {
     name: "Mary Rasmussen",
@@ -33,7 +33,7 @@ export default function Reviews() {
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-[#4B6359]">
-            We’re grateful for every customer who chooses Eco Cleaners for dry
+            We’re grateful for every customer who chooses Echo Cleaners for dry
             cleaning, laundry, alterations, and garment care.
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function Reviews() {
           </a>
 
           <a
-            href="https://www.yelp.com/biz/eco-cleaners-trabuco-canyon?uid=93rHuwP6hZQB043TiGqxmQ&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+            href="https://www.yelp.com/biz/echo-cleaners-trabuco-canyon?uid=93rHuwP6hZQB043TiGqxmQ&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-[#173B2F] bg-white px-7 py-4 text-center font-semibold text-[#173B2F] hover:bg-[#F8F7F2]"

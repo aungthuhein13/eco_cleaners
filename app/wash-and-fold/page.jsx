@@ -16,9 +16,9 @@ const washFoldServices = [
 ];
 
 export const metadata = {
-  title: "Wash & Fold Laundry in Trabuco Canyon | Eco Cleaners",
+  title: "Wash & Fold Laundry in Trabuco Canyon | Echo Cleaners",
   description:
-    "Wash and fold laundry service in Trabuco Canyon. Drop off everyday laundry, towels, clothes, and family laundry at Eco Cleaners.",
+    "Wash and fold laundry service in Trabuco Canyon. Drop off everyday laundry, towels, clothes, and family laundry at Echo Cleaners.",
 };
 
 export default function WashAndFoldPage() {
@@ -37,7 +37,7 @@ export default function WashAndFoldPage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
-                Eco Cleaners offers convenient wash and fold laundry service for
+                Echo Cleaners offers convenient wash and fold laundry service for
                 everyday clothes, towels, and family laundry. Drop it off, and
                 we’ll wash, dry, fold, and neatly prepare it for pickup.
               </p>
@@ -65,7 +65,7 @@ export default function WashAndFoldPage() {
               <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
                 <Image
                   src="/wash-and-fold.png"
-                  alt="Wash and fold laundry service at Eco Cleaners"
+                  alt="Wash and fold laundry service at Echo Cleaners"
                   fill
                   priority
                   className="object-cover object-center"
@@ -174,7 +174,7 @@ export default function WashAndFoldPage() {
           <div className="grid items-center gap-8 md:grid-cols-[1.3fr_0.7fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D7C9A3]">
-                Visit Eco Cleaners
+                Visit Echo Cleaners
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold md:text-5xl">
@@ -182,7 +182,7 @@ export default function WashAndFoldPage() {
               </h2>
 
               <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80">
-                Stop by Eco Cleaners for convenient wash and fold laundry
+                Stop by Echo Cleaners for convenient wash and fold laundry
                 service in Trabuco Canyon.
               </p>
             </div>
@@ -209,7 +209,7 @@ export default function WashAndFoldPage() {
       </section>
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

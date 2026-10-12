@@ -50,8 +50,8 @@ export default function Hero() {
         <div className="rounded-[2rem] border border-[#D7C9A3] bg-white p-3 shadow-lg">
           <div className="relative h-[360px] overflow-hidden rounded-[1.5rem] md:h-[460px]">
             <Image
-              src="/new_store_interior.JPEG"
-              alt="Eco Cleaners storefront in Trabuco Canyon"
+              src="/new_sign.JPEG"
+              alt="Echo Cleaners storefront in Trabuco Canyon"
               fill
               priority
               className="object-cover"

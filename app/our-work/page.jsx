@@ -48,7 +48,7 @@ const workExamples = [
 const customerFeedback = [
   {
     quote:
-      "Henry at Eco Cleaners was very helpful and friendly. I brought a pair of pants that were too long and needed to be hemmed. After a couple days, they turned out great! I chose this location based on previous positive reviews, and am glad I did. I would recommend this location to anyone needing a fast and reliable cleaners.",
+      "Henry at Echo Cleaners was very helpful and friendly. I brought a pair of pants that were too long and needed to be hemmed. After a couple days, they turned out great! I chose this location based on previous positive reviews, and am glad I did. I would recommend this location to anyone needing a fast and reliable cleaners.",
     customer: "Dylan Garcia",
     source: "Google Review",
   },
@@ -90,9 +90,9 @@ const reasons = [
 ];
 
 export const metadata = {
-  title: "Our Work | Eco Cleaners",
+  title: "Our Work | Echo Cleaners",
   description:
-    "See examples of cleaning, alterations, household-item care, and customer feedback from Eco Cleaners in Trabuco Canyon.",
+    "See examples of cleaning, alterations, household-item care, and customer feedback from Echo Cleaners in Trabuco Canyon.",
 };
 
 export default function OurWorkPage() {
@@ -112,7 +112,7 @@ export default function OurWorkPage() {
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
               See examples of our cleaning and alteration work, along with
-              feedback from customers who trusted Eco Cleaners with their
+              feedback from customers who trusted Echo Cleaners with their
               garments and household items.
             </p>
 
@@ -137,7 +137,7 @@ export default function OurWorkPage() {
             <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
               <Image
                 src="/our-work/finished-garments.png"
-                alt="Finished garments prepared at Eco Cleaners"
+                alt="Finished garments prepared at Echo Cleaners"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -314,7 +314,7 @@ export default function OurWorkPage() {
             </p>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-              What customers say about Eco Cleaners.
+              What customers say about Echo Cleaners.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-[#4B6359]">
@@ -364,7 +364,7 @@ export default function OurWorkPage() {
             </a>
 
             <a
-                href="https://www.yelp.com/biz/eco-cleaners-trabuco-canyon?uid=93rHuwP6hZQB043TiGqxmQ&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+                href="https://www.yelp.com/biz/echo-cleaners-trabuco-canyon?uid=93rHuwP6hZQB043TiGqxmQ&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-[#173B2F] bg-white px-6 py-3 text-center font-semibold text-[#173B2F] hover:bg-[#F1EFE7]"
@@ -444,7 +444,7 @@ export default function OurWorkPage() {
       </section>
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

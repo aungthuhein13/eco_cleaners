@@ -62,9 +62,9 @@ const finePrint = [
 ];
 
 export const metadata = {
-  title: "Offers | Eco Cleaners",
+  title: "Offers | Echo Cleaners",
   description:
-    "View current Eco Cleaners offers for dry cleaning, pickup and delivery, laundry, and garment care in Trabuco Canyon.",
+    "View current Echo Cleaners offers for dry cleaning, pickup and delivery, laundry, and garment care in Trabuco Canyon.",
 };
 
 export default function OffersPage() {
@@ -82,7 +82,7 @@ export default function OffersPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#4B6359]">
-              View current offers from Eco Cleaners in Trabuco Canyon. Stop by
+              View current offers from Echo Cleaners in Trabuco Canyon. Stop by
               or call us with questions about eligible items, turnaround, and
               service availability.
             </p>
@@ -212,7 +212,7 @@ export default function OffersPage() {
       </section>
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

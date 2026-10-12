@@ -84,9 +84,9 @@ const serviceGuide = [
 ];
 
 export const metadata = {
-  title: "Our Services | Eco Cleaners",
+  title: "Our Services | Echo Cleaners",
   description:
-    "Eco Cleaners offers dry cleaning, alterations, shirt laundry, wash and fold, leather care, household item cleaning, wedding gown cleaning, and drapery cleaning in Trabuco Canyon.",
+    "Echo Cleaners offers dry cleaning, alterations, shirt laundry, wash and fold, leather care, household item cleaning, wedding gown cleaning, and drapery cleaning in Trabuco Canyon.",
 };
 
 export default function ServicesPage() {
@@ -105,7 +105,7 @@ export default function ServicesPage() {
                     </h1>
 
                     <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
-                    Eco Cleaners provides premium garment care in Trabuco Canyon,
+                    Echo Cleaners provides premium garment care in Trabuco Canyon,
                     including dry cleaning, shirt laundry, alterations, wash & fold,
                     leather care, household items, wedding gowns, and drapery cleaning.
                     </p>
@@ -133,7 +133,7 @@ export default function ServicesPage() {
                     <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
                     <Image
                         src="/services-rack.JPEG"
-                        alt="Finished garments on rack at Eco Cleaners"
+                        alt="Finished garments on rack at Echo Cleaners"
                         fill
                         priority
                         className="object-cover object-[70%_center]"
@@ -257,7 +257,7 @@ export default function ServicesPage() {
           <div className="grid items-center gap-8 md:grid-cols-[1.3fr_0.7fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D7C9A3]">
-                Visit Eco Cleaners
+                Visit Echo Cleaners
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold md:text-5xl">
@@ -265,7 +265,7 @@ export default function ServicesPage() {
               </h2>
 
               <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80">
-                Stop by Eco Cleaners with your item. We’ll take a look and help
+                Stop by Echo Cleaners with your item. We’ll take a look and help
                 you understand the best next step.
               </p>
             </div>
@@ -292,7 +292,7 @@ export default function ServicesPage() {
       </section>
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>

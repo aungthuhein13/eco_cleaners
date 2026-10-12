@@ -50,11 +50,11 @@ export default function Header() {
         <a
           href="/"
           className="absolute left-1/2 -translate-x-1/2"
-          aria-label="Eco Cleaners home"
+          aria-label="Echo Cleaners home"
         >
           <Image
-            src="/new_logo_transparent_1.png"
-            alt="Eco Cleaners logo"
+            src="/transparent_new_logo.png"
+            alt="Echo Cleaners logo"
             width={220}
             height={130}
             priority
@@ -109,8 +109,8 @@ export default function Header() {
       >
         <a href="/" className="flex items-center">
           <Image
-            src="/new_logo_transparent_1.png"
-            alt="Eco Cleaners logo"
+            src="/transparent_new_logo.png"
+            alt="Echo Cleaners logo"
             width={300}
             height={160}
             priority

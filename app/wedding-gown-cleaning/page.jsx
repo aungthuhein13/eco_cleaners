@@ -13,9 +13,9 @@ const gownServices = [
 ];
 
 export const metadata = {
-  title: "Wedding Gown Cleaning in Trabuco Canyon | Eco Cleaners",
+  title: "Wedding Gown Cleaning in Trabuco Canyon | Echo Cleaners",
   description:
-    "Wedding gown cleaning and formal dress care in Trabuco Canyon. Bring your gown to Eco Cleaners for an in-person review.",
+    "Wedding gown cleaning and formal dress care in Trabuco Canyon. Bring your gown to Echo Cleaners for an in-person review.",
 };
 
 export default function WeddingGownCleaningPage() {
@@ -34,7 +34,7 @@ export default function WeddingGownCleaningPage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-[#4B6359]">
-                Eco Cleaners helps with wedding gowns, formal dresses, and
+                Echo Cleaners helps with wedding gowns, formal dresses, and
                 special occasion garments. Because every gown is different, we
                 recommend bringing it in for an in-person review before
                 cleaning.
@@ -63,7 +63,7 @@ export default function WeddingGownCleaningPage() {
               <div className="relative h-[420px] overflow-hidden rounded-[1.5rem] md:h-[520px]">
                 <Image
                   src="/wedding-dress.png"
-                  alt="Wedding gown cleaning and formal dress care at Eco Cleaners"
+                  alt="Wedding gown cleaning and formal dress care at Echo Cleaners"
                   fill
                   priority
                   className="object-cover object-center"
@@ -172,7 +172,7 @@ export default function WeddingGownCleaningPage() {
           <div className="grid items-center gap-8 md:grid-cols-[1.3fr_0.7fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D7C9A3]">
-                Visit Eco Cleaners
+                Visit Echo Cleaners
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold md:text-5xl">
@@ -208,7 +208,7 @@ export default function WeddingGownCleaningPage() {
       </section>
       <footer className="border-t border-[#D7C9A3] px-6 py-6">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-[#4B6359] md:flex-row">
-          <p>© 2026 Eco Cleaners. All rights reserved.</p>
+          <p>© 2026 Echo Cleaners. All rights reserved.</p>
         </div>
       </footer>
     </main>
