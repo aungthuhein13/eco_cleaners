@@ -4,9 +4,12 @@ import MobileBottomBar from "@/components/MobileBottomBar";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata = {
-  title: "Echo Cleaners | Premium Dry Cleaning",
+  title: {
+    default: "Echo Cleaners | Dry Cleaning & Alterations",
+    template: "%s | Echo Cleaners",
+  },
   description:
-    "Echo Cleaners offers dry cleaning, laundry, alterations, leather care, household items, wedding gowns, and drapery cleaning in Trabuco Canyon.",
+    "Professional dry cleaning, alterations, laundry, household-item cleaning, and pickup & delivery from Echo Cleaners.",
 };
 
 export default function RootLayout({ children }) {
